@@ -1,0 +1,1 @@
+print('It is tasty!' if sum([ord(c) for c in input()]) > 300 else 'Oh, no!')
