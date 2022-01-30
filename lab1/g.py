@@ -1,14 +1,8 @@
-a = 0
 def decimal(s, i):
     if i == len(s):
-        return 1
-    else:
-        c = 2 ** int(len(s) - int(s[i]) - 1)
-        global a += c 
-        decimal(s, i + 1)
-    
-    return a
+        return 0
+    x = int(s[i]) * 2 ** (len(s) - i - 1)
+    return x + decimal(s, i + 1) 
 
-s = input()
-decimal(s, 0)
-
+st = input()
+print(decimal(st, 0))
