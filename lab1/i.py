@@ -2,16 +2,14 @@
 #out = []
 #for i in range(len(a)):
 #    if b in a[i]:
-#       c = len(a[i]) - len(b)
-#        out.append(a[i][:c])
-##if len(out) != 0:
+#        c = len(a[i]) - len(b)
+#        if c != 0:
+#            out.append(a[i][:c])
+#if len(out) != 0:
 #    print(*out, sep='/n')
 
 b = '@gmail.com'
 for i in range(int(input())):
-    s = ''
     a = input()
-    if b in a:
-        s = a[:len(a) - len(b)]
-    if len(s) != 0:
-        print(s)
+    if b in a and len(a) - len(b) != 0:
+        print(a[:len(a) - len(b)])
