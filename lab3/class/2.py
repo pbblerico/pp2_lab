@@ -18,7 +18,7 @@ class rectangle(Shape):
     def rec_area(self):
         self.area = self.length * self.width 
 
-x = Square(4)
+x = Square(int(input()))
 x.print_area()
-y = rectangle(3, 4)
+y = rectangle(int(input()), int(input()))
 y.print_area()
