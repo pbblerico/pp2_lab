@@ -6,7 +6,5 @@ d2, m2, y2 = map(int, input().split())
 date1 = datetime.date(y1, m1, d1)
 date2 = datetime.date(y2, m2, d2)
 
-#out = abs(date1 - date2)
-
-#print(out.total_seconds())
+print(abs(date1 - date2).total_seconds())
 
