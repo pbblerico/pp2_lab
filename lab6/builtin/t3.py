@@ -1,0 +1,6 @@
+s = list(input())
+rev_s = ''.join([i for i in reversed(s)])
+s = ''.join([i for i in s])
+print(rev_s)
+ans = compile('print(s == rev_s)', 'tst', 'exec')
+exec(ans)
