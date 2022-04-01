@@ -46,7 +46,7 @@ while run:
     minute = time.minute
 
     screen.blit(base, (0, 0))
-    rotate_and_blit(fixed, origin_s, hand1, -second * 6 + 45, screen)
+    rotate_and_blit(fixed, origin_s, hand1, -second * 6 + 57, screen)
     rotate_and_blit(fixed, origin_m, hand2, -((minute + second/60) * 6) + 43, screen)
 
     pg.display.update()
