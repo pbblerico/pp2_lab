@@ -163,7 +163,7 @@ snake = Snake()
 food = Food()
 wall = Wall(lvl)
 level = level_and_cnt(lvl)
-win_score = [1, 1, 1, 1] #the score that player need to get to pass the level
+win_score = [5, 10, 15, 20] #the score that player need to get to pass the level
 while run:
     for event in pg.event.get():
         if event.type == pg.QUIT:
